@@ -226,9 +226,6 @@ class GraphWin(tk.Canvas):
         """Return last key pressed or None if no key pressed since last call"""
         if self.isClosed():
             raise GraphicsError("checkKey in closed window")
-        #self.update()
-        #key = self.lastKey
-        #self.lastKey = ""
         return self.keys 
     
     def _onKeyPress(self, evnt):
