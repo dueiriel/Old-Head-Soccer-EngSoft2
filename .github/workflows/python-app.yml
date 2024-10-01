@@ -18,7 +18,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install flake8 pytest xvfbwrapper pygame
+        pip install flake8 pytest xvfbwrapper pygame unittest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test with test
       run: |
@@ -26,5 +26,4 @@ jobs:
         xvfb-run -a -s "-screen 0 1024x768x24" python test.py
     - name: Test with test2
       run: |
-        #python -m unittest discover -s . -p "test*.py
         xvfb-run -a -s "-screen 0 1024x768x24" python test2.py
