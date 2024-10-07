@@ -26,4 +26,4 @@ jobs:
         xvfb-run -a -s "-screen 0 1024x768x24" python test.py
     - name: Test with test2
       run: |
-        xvfb-run -a -s "-screen 0 1024x768x24" python test2.py
+        xvfb-run -a -s "-screen 0 1024x768x24" python -m unittest test2.py
