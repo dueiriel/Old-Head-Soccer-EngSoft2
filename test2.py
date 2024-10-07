@@ -1,3 +1,5 @@
+import time, math, unittest, pygame
+
 def verificar_gol(x_bola, y_bola, raio_bola):
     # Supondo que o gol esteja na posição (x_gol, y_gol) com uma largura e altura específicas
     x_gol = 1100
