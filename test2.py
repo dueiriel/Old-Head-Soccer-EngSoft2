@@ -49,3 +49,6 @@ class TesteGol(unittest.TestCase):
 
         # Espera que o placar ainda seja 0
         self.assertEqual(placar, 0)
+
+if __name__ == '__main__':
+    unittest.main()
